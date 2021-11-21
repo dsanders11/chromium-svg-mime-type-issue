@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+      .logo {
+        width: 128px;
+        height: 128px;
+        margin: 10px;
+        background-color: #3a76f0;
+      }
+
+      #test1 {
+        -webkit-mask-image: url("./signal-logo.svg");
+      }
+
+      #test2 {
+        margin-left: 10px;
+      }
+
+      #test3 {
+        background-image: url("./signal-logo.svg");
+        background-color: initial;
+      }
+
+      #test4 {
+        -webkit-mask-image: url("https://raw.githubusercontent.com/signalapp/Signal-Desktop/development/images/signal-logo.svg");
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="logo" id="test1"></div>
+    <svg id="test2" width="128" height="128" xmlns="http://www.w3.org/2000/svg">
+      <image href="./signal-logo.svg" height="128" width="128"/>
+    </svg>
+    <div class="logo" id="test3"></div>
+    <div class="logo" id="test4"></div>
+  </body>
+</html>
